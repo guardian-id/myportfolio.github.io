@@ -1,11 +1,9 @@
-*{
-    font-family:Arial, Helvetica, sans-serif
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 .img1{
     border-radius: 20%;
-}
-.container1{
-    max-width: 400px;
 }
 .icon{
     gap: 90px;
@@ -13,6 +11,38 @@
 }
 .icon a{
     text-decoration: none;
-
+}
+.button1{
+    gap: 30px;
+    margin-top: 20px;
+}
+#satu{
+    background-color: gainsboro;
+    border: none;
+    border-radius: 2px;
+}
+#dua{
+    background-color: gainsboro;
+    border: none;
+    border-radius: 2px;
+}
+#tiga{
+    background-color: gainsboro;
+    border: none;
+    border-radius: 2px;
+}
+.container2{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Membagi 2 kolom sama besar */
+  background-color: gainsboro;
+  box-shadow: 5px 5px 0px #000;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
 }
 
+@media (max-width: 500px) {
+  .container2{
+    grid-template-columns: 1fr; /* Menjadi 1 kolom saja (otomatis ke bawah) */
+  }
+}
