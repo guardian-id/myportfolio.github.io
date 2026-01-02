@@ -4,37 +4,64 @@ body{
 }
 .img1{
     border-radius: 20%;
+    box-shadow: 2px 2px 2px #888888;
 }
 .icon{
-    gap: 90px;
+    gap: 100px;
     font-size: 50px;
 }
 .icon a{
     text-decoration: none;
 }
 .button1{
-    gap: 30px;
-    margin-top: 20px;
+margin-left: 10px;
 }
 #satu{
     background-color: gainsboro;
     border: none;
     border-radius: 2px;
+    margin-right: 10px;
+    width: 100px;
+    height: 30px;
+    box-shadow: 2px 2px 2px #888888;
 }
 #dua{
     background-color: gainsboro;
     border: none;
     border-radius: 2px;
+    margin-right: 10px;
+    width: 120px;
+    height: 30px;
+    box-shadow: 2px 2px 2px #888888;
 }
 #tiga{
     background-color: gainsboro;
     border: none;
     border-radius: 2px;
+    margin-right: 10px;
+    width: 100px;
+    height: 30px;
+    box-shadow: 2px 2px 2px #888888;
 }
 .container2{
   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* Membagi 2 kolom sama besar */
-  background-color: gainsboro;
+  grid-template-columns: repeat(0, 1fr); /* Membagi 2 kolom sama besar */
+  background-color: white;
+  box-shadow: 5px 5px 0px #000;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
+}
+
+@media (max-width: 500px) {
+  .container2{
+    grid-template-columns: 1fr; /* Menjadi 1 kolom saja (otomatis ke bawah) */
+  }
+}
+.container3{
+  display: grid;
+  grid-template-columns: repeat(0, 1fr); /* Membagi 2 kolom sama besar */
+  background-color: white;
   box-shadow: 5px 5px 0px #000;
   border-style: solid;
   border-width: 1px;
